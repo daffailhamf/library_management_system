@@ -106,3 +106,8 @@ while user_option != '0':
         user_option = input('Insert your option: ')
 
 print('Thanks for using Simple Library goodbye!')
+
+books.db_con.mycursor.close()
+users.db_con.mycursor.close()
+books.db_con.db.close()
+users.db_con.db.close()
